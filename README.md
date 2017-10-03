@@ -1,2 +1,3 @@
-# projects-intro
-Introduction to DataCamp Projects
+# Project | Introduction to Projects
+
+An Introduction to DataCamp Projects
