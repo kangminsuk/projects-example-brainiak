@@ -1,0 +1,23 @@
+title          : "Introduction to DataCamp Projects"
+description    : >
+  This project is an introduction to DataCamp Projects. 
+language       : python
+from           : 'python-notebooks-prod:48'
+runtime_config : heavy
+long_description: |
+  In this project, you will get a gentle introduction to DataCamp Projects. We will
+  walk you through the projects interface interactively. You will learn how
+  to work with jupyter notebooks as a part of your project. 
+instructors:
+  - 2
+collaborators:
+  - 804054
+topics:
+  - 8
+  - 4
+  - 3
+datasets:
+  - "babynames"
+time_needed: "90 minutes"
+illustration: "https://projects.datacamp.com/assets/images/R@2X.png"
+
