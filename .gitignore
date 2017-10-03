@@ -99,3 +99,13 @@ ENV/
 
 # mypy
 .mypy_cache/
+.Rproj.user
+
+# Temporary OS files
+.DS_Store
+
+# Ipython Files to Ignore
+.ipynb_checkpoints
+.nbgrader.log
+
+
