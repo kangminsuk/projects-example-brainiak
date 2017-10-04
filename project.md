@@ -431,6 +431,8 @@ Congratulations on completing your tasks successfully! How did it feel seeing th
 
 ![success](https://media.giphy.com/media/a0h7sAqON67nO/giphy.gif)
 
+You are now ready to get started with your first project. Read this [comprehensive guide](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook) to learn more about how to work with Jupyter Notebooks.
+
 `@hint`
 
 You don't need help with this one!
