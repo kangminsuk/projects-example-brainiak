@@ -17,8 +17,6 @@ In this project, we will analyze a fascinating dataset on every single lego bloc
 As a datacamp user, you have been working hard, learning the fundamentals of data science, by doing many [courses]() we offer, and practicing these skills by taking our [challenges](). 
 Our vision behind __Projects__ is to take this many steps forward, and  allow you apply these skills to carry out an __end-to-end analysis__, on a __real-world task__, using __real-world__ tools and workflows, and be able to __showcase__ your work. In this __Introduction to Projects__, you will learn how projects work, and familiarize yourself with the new interface.
 
----
-
 For your first task: 
 
 - Read the first paragraph on the right to familiarize yourself with the narrative for you project! 
@@ -72,8 +70,6 @@ The project interface consists of a __jupyter notebook__ on the right and an __i
 1. The  [Jupyter Notebook](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html) contains the main narrative for the project. It contains the story you will be working on, supported by all the code you write, and the output tables and plots, that you will create.
 
 2. The __instructional sidebar__ contains `instructions`, `hints`, and other pedagogical elements that will aid you in you in your quest to complete your project successfully and come up with a newsworthy story! This portion of the interface works almost the same way as courses.
-
----
 
 For your second task:
 
@@ -140,7 +136,6 @@ As you might have already noticed, doing data science in the real world is all a
 
 ![jupyter-notebook](https://www.dataquest.io/blog/images/jupyter/interface-screenshot.png)
 
----
 
 In this task, you will 
 
@@ -277,7 +272,6 @@ Every project is broken down into a number of smaller tasks. In order to complet
 
 Let us follow these steps to complete this task.
 
----
 
 In this task, you will:
 
