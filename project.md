@@ -4,6 +4,7 @@
 
 ```yaml
 type: NotebookTask
+key: 1d0b086e6c
 ```
 
 `@context`
@@ -55,6 +56,7 @@ def test_default():
 
 ```yaml
 type: NotebookTask
+key: 044b2cef41
 ```
 
 `@context`
@@ -126,6 +128,7 @@ def test_colors_exists():
 
 ```yaml
 type: NotebookTask
+key: 15c1e2ce38
 ```
 
 `@context`
@@ -180,6 +183,7 @@ def test_num_colors():
 
 ```yaml
 type: NotebookTask
+key: a5723ae5c2
 ```
 
 `@context`
@@ -257,6 +261,7 @@ def test_colors_summary():
 
 ```yaml
 type: NotebookTask
+key: c9d0e58653
 ```
 
 `@context`
@@ -346,6 +351,7 @@ def test_parts_by_year_exists():
 
 ```yaml
 type: NotebookTask
+key: 266a3f390c
 ```
 
 `@context`
@@ -419,6 +425,7 @@ def test_themes_by_year_names():
 
 ```yaml
 type: NotebookTask
+key: a293e5076e
 ```
 
 `@context`
