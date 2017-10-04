@@ -103,9 +103,10 @@ ENV/
 
 # Temporary OS files
 .DS_Store
+.Rhistory
 
 # Ipython Files to Ignore
 .ipynb_checkpoints
 .nbgrader.log
-
+todos.ipynb
 
