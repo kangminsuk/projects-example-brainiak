@@ -221,7 +221,11 @@ In this task, you will:
 
 Executing your code should result in the table shown below.
 
-![colors_summary](https://imgur.com/OtvmT9E.png)
+
+|is_trans|id |name|rgb|
+|--------|--:|---:|--:|
+|f       |107| 107|107|
+|t       | 28|  28| 28|
 
 Additionally,
 
@@ -252,7 +256,7 @@ colors_summary
 
 ```{python}
 # Summarize colors based on whether they are transparent or not?
-colors_summary = colors.groupby("is_trans").count()
+colors_summary = colors.groupby("is_trans", as_index = False).count()
 colors_summary
 ```
 
@@ -306,7 +310,13 @@ In this task, you will:
 
 The first few rows of `parts_per_year` should resemble the table shown below:
 
-![parts-per-year](https://imgur.com/P0x36gr.png)
+|set_num|           name           |year|theme_id|num_parts|
+|-------|--------------------------|---:|-------:|--------:|
+|00-1   |Weetabix Castle           |1970|     414|      471|
+|0011-2 |Town Mini-Figures         |1978|      84|       12|
+|0011-3 |Castle 2 for 1 Bonus Offer|1987|     199|        2|
+|0012-1 |Space Mini-Figures        |1979|     143|       12|
+|0013-1 |Space Mini-Figures        |1979|     143|       12|
 
 
 
@@ -392,7 +402,13 @@ In this task
 
 The first few rows of your data should resemble the table shown below.
 
-![themes_by_year](https://imgur.com/SC9UXEf.png)
+|year|theme_id|
+|---:|-------:|
+|1950|       7|
+|1953|       4|
+|1954|      14|
+|1955|      28|
+|1956|      12|
 
 `@hint`
 
