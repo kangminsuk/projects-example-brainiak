@@ -5,6 +5,7 @@ pip3 install seaborn==0.7.1
 
 DATADIR=/usr/local/share/datasets
 mkdir -p $DATADIR
-# wget -O $DATADIR/names.csv.gz https://s3.amazonaws.com/assets.datacamp.com/production/project_2/datasets/names.csv.gz
-# wget -O $DATADIR/lifetables.csv https://s3.amazonaws.com/assets.datacamp.com/production/project_2/datasets/lifetables.csv
+# TODO: Update download links below to the correct url 
+# wget -O $DATADIR/colors.csv https://s3.amazonaws.com/assets.datacamp.com/production/project_2/datasets/colors.csv
+# wget -O $DATADIR/sets.csv https://s3.amazonaws.com/assets.datacamp.com/production/project_2/datasets/sets.csv
 
