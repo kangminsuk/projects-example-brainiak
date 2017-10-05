@@ -4,7 +4,7 @@ description    : >
 language       : python
 from           : 'python-notebooks-prod:54'
 runtime_config : heavy
-status         : live
+state         : development
 long_description: |
   In this project, you will get a gentle introduction to DataCamp Projects. We will
   walk you through the projects interface interactively. You will learn how
