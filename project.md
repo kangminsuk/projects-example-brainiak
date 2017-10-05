@@ -9,28 +9,29 @@ key:  1d0b086e6c
 
 `@context`
 
+Everyone loves Lego (unless you ever stepped on one). Did you know by the way that "Lego" was derived from the Danish phrase leg godt, which means "play well"? Unless you speak Danish, probably not. 
+
 In this project, we will analyze a fascinating dataset on every single lego block that has ever been built!
 
 ![lego](https://sh-s7-live-s.legocdn.com/is/image/LEGOMKTG/pick-a-brick--201606--gl--banner-background--small)
 
 `@instructions`
 
-__What are Projects?__
+In this __Introduction to Projects__, you will learn how DataCamp projects work and familiarize yourself with the interface.
 
-As a datacamp user, you have been working hard, learning the fundamentals of data science, by doing many [courses]() we offer, and practicing these skills by taking our [challenges](). 
-Our vision behind __Projects__ is to take this many steps forward, and  allow you apply these skills to carry out an __end-to-end analysis__, on a __real-world task__, using __real-world__ tools and workflows, and be able to __showcase__ your work. In this __Introduction to Projects__, you will learn how projects work, and familiarize yourself with the new interface.
+__Projects__ allow you to practice and apply the skills you've learned in the DataCamp [courses](https://www.datacamp.com/courses). In each project you carry out an __end-to-end analysis__, on a __real-world task__, using __real-world__ tools and workflows. The best thing is that we automatically check your work. At the end of a project, you can download your result and __showcase__ your work. 
 
 <hr/>
 
 For your first task: 
 
-- Read the first paragraph on the right to familiarize yourself with the narrative for you project! 
+- Read the first paragraph on the right to familiarize yourself with topic of you project! 
 - Feel free to poke around the interface. 
 - When you are finished, click on the __Next Task__ button at the bottom.  
 
 `@hint`
 
-You don't really need a hint for this task!
+You don't really need a hint for this task! Just click the Next Task button below. 
 
 `@sample_code`
 
@@ -71,12 +72,9 @@ Let us start by reading in the colors data to get a sense of the diversity of le
 
 `@instructions`
 
-__The Projects Interface__
+Your project interface consists of a __jupyter notebook__ on the right and the __instructional sidebar__ on the left.
 
-
-The project interface consists of a __jupyter notebook__ on the right and an __instructional sidebar__ on the left.
-
-1. The  [Jupyter Notebook](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html) contains the main narrative for the project. It contains the story you will be working on, supported by all the code you write, and the output tables and plots, that you will create.
+1. The  [Jupyter Notebook](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook) contains the main narrative for the project. It contains the story you will be working on, supported by all the code you write, and the output tables and plots, that you will create.
 
 2. The __instructional sidebar__ contains `instructions`, `hints`, and other pedagogical elements that will aid you in you in your quest to complete your project successfully and come up with a newsworthy story! This portion of the interface works almost the same way as courses.
 
@@ -85,8 +83,8 @@ The project interface consists of a __jupyter notebook__ on the right and an __i
 For your second task:
 
 - Shift your attention to the content on top of the notebook. 
-- Read it to understand the narrative. 
-- Click on the box/cell containing code, press `Ctrl + Enter`, and notice what happens!
+- Read the section under __Reading Data__ to understand the narrative. 
+- Once you reach the box/cell containing the Python code, press `Ctrl + Enter`, and notice what happens!
 - When you are finished, click on the __Next Task__ button at the bottom.
 
 `@hint`
@@ -142,10 +140,7 @@ Now that we have read the `colors` data, we can start exploring it! Let us start
 
 `@instructions`
 
-__Welcome to Jupyter!__
-
-
-If this is your first brush with [Jupyter Notebooks](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html), continue reading this. Otherwise, go and dig into the notebook directly to explore lego blocks, and build your narrative! For those of you who choose to leave us here, don't worry, we will meet you again at the end of this journey.
+If this is your first brush with [Jupyter Notebooks](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook), continue reading this. Otherwise, go and dig into the notebook directly to explore lego blocks, and build your narrative! 
 
 As you might have already noticed, doing data science in the real world is all about building an interesting story around your data. As a result, your narrative around the data is as important as the code you write, and the outputs you generate. Jupyter Notebooks provide an awesome environment that allows you to do precisely this by combining text, code and outputs into one single document.
 
@@ -155,8 +150,10 @@ As you might have already noticed, doing data science in the real world is all a
 
 In this task, you will 
 
-- Create a variable named `num_colors` that counts the number of distinct colors.
+- Create a variable named `num_colors` that counts the number of distinct colors. 
 - Print it out.
+
+You need to provide your code in the cell that says "-- YOUR CODE FOR TASK 3 --". Once your are ready, click Next Task again. 
 
 `@hint`
 
@@ -166,7 +163,7 @@ You can inspect the dimensions of `colors` using `colors.shape`.
 
 ```{python}
 # How many distinct colors are available?
-# -- YOUR CODE HERE --
+# -- YOUR CODE FOR TASK 3 --
 ```
 
 `@solution`
@@ -199,9 +196,6 @@ key: a5723ae5c2
 The `colors` data has a column named `is_trans` that indicates whether a color is transparent or not. It would be interesting to explore the distribution of transparent vs. non-transparent colors.
 
 `@instructions`
-
-__Using the Notebook__
-
 
 A Jupyter Notebook consists of cells, each of which can contain code or markdown text. Jupyter Notebooks support code in multiple languages (like R, Python, Julia etc.), using a system of kernels. This notebook connects to a Python 3 kernel, and hence allows us to write Python code!  In this task, we will explore how to add a new cell to the notebook, write some python code to support the narrative, and execute it. Are you ready?
 
@@ -249,14 +243,14 @@ colors_summary
 
 ```{python}
 # colors_summary: Distribution of colors based on transparency
-# -- YOUR CODE HERE --
+# -- YOUR CODE FOR TASK 4 --
 ```
 
 `@solution`
 
 ```{python}
 # Summarize colors based on whether they are transparent or not?
-colors_summary = colors.groupby("is_trans", as_index = False).count()
+colors_summary = colors.groupby("is_trans", as_index = True).count()
 colors_summary
 ```
 
@@ -289,9 +283,9 @@ Let us use this data to explore how the average number of parts in lego sets has
 
 `@instructions`
 
-__Working on Tasks__
+Every DataCamp project is broken down into a number of smaller tasks. You are now already in task 5. Well done! 
 
-Every project is broken down into a number of smaller tasks. In order to complete a task, you will need to:
+In order to complete a task, you will need to:
     
 1. Read the narrative in the notebook to understand the scope of the task.
 2. Read the instructions in the sidebar to get more details on what is expected.
@@ -317,7 +311,6 @@ The first few rows of `parts_per_year` should resemble the table shown below:
 |0011-3 |Castle 2 for 1 Bonus Offer|1987|     199|        2|
 |0012-1 |Space Mini-Figures        |1979|     143|       12|
 |0013-1 |Space Mini-Figures        |1979|     143|       12|
-
 
 
 `@hint`
@@ -383,13 +376,10 @@ Lego blocks ship under multiple themes. Let us try and get a sense of how the nu
 
 `@instructions`
 
-__Checking your Work__
-
-
 At any point in the project, you can click on the __Check Project__ button at the bottom to test whether your output matches the solution.
 
-- If all the tests pass, your task circle will turn green. 
-- If some tests fail, your task circle with turn orange. 
+- If all the tests pass, your task circles on the right will turn green. 
+- If some tests fail, the incorrect tasks wil turn orange. 
 
 You can view the test results in the sidebar to understand what failed and update your code accordingly. If you are unable to get all the tests to pass despite repeated attempts, you can click on the __Hint__ button to get a useful hint.
 
@@ -465,8 +455,6 @@ key: a293e5076e
 Lego blocks offer an unlimited amoung of fun across ages. We explored some interesting trends around colors, parts and themes. 
 
 `@instructions`
-
-__Next Steps__
 
 Congratulations on completing your tasks successfully! How did it feel seeing the circle go green? Pretty awesome right?
 
