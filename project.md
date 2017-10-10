@@ -13,7 +13,7 @@ Everyone loves Lego (unless you ever stepped on one). Did you know by the way th
 
 In this project, we will analyze a fascinating dataset on every single lego block that has ever been built!
 
-![lego](https://sh-s7-live-s.legocdn.com/is/image/LEGOMKTG/pick-a-brick--201606--gl--banner-background--small)
+![lego](https://s3.amazonaws.com/assets.datacamp.com/projects/lego/lego-bricks.jpeg)
 
 `@instructions`
 
@@ -66,7 +66,7 @@ key: 044b2cef41
 
 This comprehensive database of lego blocks is provided by [Rebrickable](https://rebrickable.com/downloads/). The data is available as csv files and the schema is shown below.
 
-![schema](https://s.rebrickable.com/static/img/diagrams/downloads_schema.png)
+![schema](https://s3.amazonaws.com/assets.datacamp.com/projects/lego/downloads_schema.png)
 
 Let us start by reading in the colors data to get a sense of the diversity of lego sets!
 
@@ -144,7 +144,7 @@ If this is your first brush with [Jupyter Notebooks](https://www.datacamp.com/co
 
 As you might have already noticed, doing data science in the real world is all about building an interesting story around your data. As a result, your narrative around the data is as important as the code you write, and the outputs you generate. Jupyter Notebooks provide an awesome environment that allows you to do precisely this by combining text, code and outputs into one single document.
 
-![jupyter-notebook](https://www.dataquest.io/blog/images/jupyter/interface-screenshot.png)
+![jupyter-notebook](https://s3.amazonaws.com/assets.datacamp.com/projects/lego/notebook_inline.png)
 
 <hr/>
 
@@ -201,7 +201,7 @@ A Jupyter Notebook consists of cells, each of which can contain code or markdown
 
 A picture is worth a thousand words. So instead of describing how to work with cells in a notebook, here is an interactive gif to walk you through the steps.
 
-![Working with Cells](http://media.giphy.com/media/l378dk9Vx9JWj47ug/giphy.gif)
+![Working with Cells](https://s3.amazonaws.com/assets.datacamp.com/projects/lego/adding-cells.gif)
 
 You can read more about notebooks in this [comprehensive tutorial](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook).
 
@@ -458,7 +458,7 @@ Lego blocks offer an unlimited amoung of fun across ages. We explored some inter
 
 Congratulations on completing your tasks successfully! How did it feel seeing the circle go green? Pretty awesome right?
 
-![success](https://media.giphy.com/media/a0h7sAqON67nO/giphy.gif)
+![success](https://s3.amazonaws.com/assets.datacamp.com/projects/lego/success-large.gif)
 
 You are now ready to get started with your first project. Read this [comprehensive guide](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook) to learn more about how to work with Jupyter Notebooks.
 
