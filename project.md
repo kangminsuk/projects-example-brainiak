@@ -25,7 +25,7 @@ __Projects__ allow you to practice and apply the skills you've learned in the Da
 
 For your first task: 
 
-- Read the first paragraph on the right to familiarize yourself with topic of you project! 
+- Read the first paragraph on the right to familiarize yourself with the topic of your project!
 - Feel free to poke around the interface. 
 - When you are finished, click on the __Next Task__ button at the bottom.  
 
@@ -84,7 +84,7 @@ For your second task:
 
 - Shift your attention to the content on top of the notebook. 
 - Read the section under __Reading Data__ to understand the narrative. 
-- Once you reach the box/cell containing the Python code, press `Ctrl + Enter`, and notice what happens!
+- Once you reach the box/cell containing the Python code, click on it, press `Ctrl + Enter`, and notice what happens!
 - When you are finished, click on the __Next Task__ button at the bottom.
 
 `@hint`
@@ -153,7 +153,7 @@ In this task, you will
 - Create a variable named `num_colors` that counts the number of distinct colors. 
 - Print it out.
 
-You need to provide your code in the cell that says "-- YOUR CODE FOR TASK 3 --". Once your are ready, click Next Task again. 
+You need to provide your code in the cell that says "-- YOUR CODE FOR TASK 3 --". Once you are ready, click Next Task again. 
 
 `@hint`
 
@@ -199,7 +199,7 @@ The `colors` data has a column named `is_trans` that indicates whether a color i
 
 A Jupyter Notebook consists of cells, each of which can contain code or markdown text. Jupyter Notebooks support code in multiple languages (like R, Python, Julia etc.), using a system of kernels. This notebook connects to a Python 3 kernel, and hence allows us to write Python code!  In this task, we will explore how to add a new cell to the notebook, write some python code to support the narrative, and execute it. Are you ready?
 
-A picture is worth a thousand words. So instead of describing how to work with cells in a notebook, here is an interactive gif to walk you through the steps.
+A picture is worth a thousand words. So instead of describing how to work with cells in a notebook, here is an animated gif to walk you through the steps.
 
 ![Working with Cells](https://s3.amazonaws.com/assets.datacamp.com/projects/lego/adding-cells.gif)
 
@@ -210,8 +210,8 @@ You can read more about notebooks in this [comprehensive tutorial](https://www.d
 In this task, you will:
 
 - Summarize colors based on their transparency.
-- Save it as a variable named `colors_summary`.
-- Print out `colors_summary`
+- Save the result as a variable named `colors_summary`.
+- Print out `colors_summary`.
 
 Executing your code should result in the table shown below.
 
@@ -227,7 +227,7 @@ Additionally,
 - Change its type to `markdown` using the toolbar on the top of the notebook.
 - Enter some text (in markdown) to share something interesting about the output table above it.
 
-After you are completed this task, feel free to play around adding new cells, editing them, modifying their type, executing code, etc. Explore as much as you want to, and when you are ready click on `Next Task` to move on to the next task.
+After you have completed this task, feel free to play around with adding new cells, editing them, modifying their type, executing code, etc. Explore as much as you want to, and when you are ready click on `Next Task` to move on to the next task.
 
 `@hint`
 
@@ -298,8 +298,8 @@ Let us follow these steps to complete this task.
 In this task, you will:
 
 
-- Read the data in `/usr/local/share/datasets/sets.csv` as a `DataFrame` named `sets`
-- Create a summary of the average parts per year and save it as `parts_per_year`
+- Read the data in `/usr/local/share/datasets/sets.csv` as a `DataFrame` named `sets`.
+- Create a summary of the average parts per year and save it as `parts_per_year`.
 - Plot the average number of parts per year.
 
 The first few rows of `parts_per_year` should resemble the table shown below:
@@ -372,14 +372,14 @@ key: 266a3f390c
 
 `@context`
 
-Lego blocks ship under multiple themes. Let us try and get a sense of how the number of themes shipped has varied over the years.
+Lego blocks ship under multiple themes. Let us try to get a sense of how the number of themes shipped has varied over the years.
 
 `@instructions`
 
 At any point in the project, you can click on the __Check Project__ button at the bottom to test whether your output matches the solution.
 
 - If all the tests pass, your task circles on the right will turn green. 
-- If some tests fail, the incorrect tasks wil turn orange. 
+- If some tests fail, the incorrect tasks will turn orange. 
 
 You can view the test results in the sidebar to understand what failed and update your code accordingly. If you are unable to get all the tests to pass despite repeated attempts, you can click on the __Hint__ button to get a useful hint.
 
@@ -456,7 +456,7 @@ Lego blocks offer an unlimited amoung of fun across ages. We explored some inter
 
 `@instructions`
 
-Congratulations on completing your tasks successfully! How did it feel seeing the circle go green? Pretty awesome right?
+Congratulations on completing your tasks successfully! How did it feel seeing the circle turn green? Pretty awesome right?
 
 ![success](https://s3.amazonaws.com/assets.datacamp.com/projects/lego/success-large.gif)
 
