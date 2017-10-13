@@ -378,7 +378,7 @@ Lego blocks ship under multiple themes. Let us try to get a sense of how the num
 
 At any point in the project, you can click on the __Check Project__ button at the bottom to test whether your output matches the solution.
 
-- If all the tests pass, your task circles on the right will turn green. 
+- If all the tests pass, your task circles on the left will turn green. 
 - If some tests fail, the incorrect tasks will turn orange. 
 
 You can view the test results in the sidebar to understand what failed and update your code accordingly. If you are unable to get all the tests to pass despite repeated attempts, you can click on the __Hint__ button to get a useful hint.
