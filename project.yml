@@ -13,8 +13,12 @@ long_description: |
 technology: 2
 instructors:
   - ramnath@datacamp.com
-collaborators: []
-topics: []
+collaborators:
+  - martijn@datacamp.com
+topics:
+  - 8
+  - 4
+  - 3
 time_needed: "45 minutes"
 illustration: "https://projects.datacamp.com/assets/images/R@2X.png"
 
