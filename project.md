@@ -223,7 +223,7 @@ Executing your code should result in the table shown below.
 
 Additionally,
 
-- Insert a new cell by clicking on `Cell > Insert Cell Below`
+- Insert a new cell by clicking on `Insert > Insert Cell Below`
 - Change its type to `markdown` using the toolbar on the top of the notebook.
 - Enter some text (in markdown) to share something interesting about the output table above it.
 
