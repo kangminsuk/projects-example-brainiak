@@ -304,13 +304,14 @@ In this task, you will:
 
 The first few rows of `parts_per_year` should resemble the table shown below:
 
-|set_num|           name           |year|theme_id|num_parts|
-|-------|--------------------------|---:|-------:|--------:|
-|00-1   |Weetabix Castle           |1970|     414|      471|
-|0011-2 |Town Mini-Figures         |1978|      84|       12|
-|0011-3 |Castle 2 for 1 Bonus Offer|1987|     199|        2|
-|0012-1 |Space Mini-Figures        |1979|     143|       12|
-|0013-1 |Space Mini-Figures        |1979|     143|       12|
+
+|year|num_parts|
+|---:|--------:|
+|1950|    10.14|
+|1953|    16.50|
+|1954|    12.36|
+|1955|    36.86|
+|1956|    18.50|
 
 
 `@hint`
@@ -348,7 +349,7 @@ parts_by_year = sets[['year', 'num_parts']].\
   mean()
 parts_by_year.head()
 parts_by_year.plot(x = 'year', y = 'num_parts')
-sets.head()
+parts_by_year.head()
 ```
 
 `@tests`
@@ -372,7 +373,7 @@ key: 266a3f390c
 
 `@context`
 
-Lego blocks ship under multiple themes. Let us try to get a sense of how the number of themes shipped has varied over the years.
+Lego blocks ship under multiple [themes](https://shop.lego.com/en-US/Themes). Let us try to get a sense of how the number of themes shipped has varied over the years.
 
 `@instructions`
 
@@ -389,16 +390,17 @@ In this task
 
 - Create a summary of the number of themes shipped by year.
 - Save it as a `DataFrame` named `themes_by_year`.
+- Print the first couple of rows in `themes_by_year`.
 
 The first few rows of your data should resemble the table shown below.
 
 |year|theme_id|
 |---:|-------:|
-|1950|       7|
-|1953|       4|
-|1954|      14|
-|1955|      28|
-|1956|      12|
+|1950|       2|
+|1953|       1|
+|1954|       2|
+|1955|       4|
+|1956|       3|
 
 `@hint`
 
@@ -407,7 +409,7 @@ Shown below is some code to help you complete this task:
 ```python
 themes_by_year = sets[[___, ___]].\
   ___(___, as_index = False).\
-  ___()
+  agg({"theme_id": pd.Series.___})
 themes_by_year.___()
 ```
 
@@ -424,7 +426,7 @@ themes_by_year.___()
 # themes_by_year: Number of themes shipped by year
 themes_by_year = sets[['year', 'theme_id']].\
   groupby('year', as_index = False).\
-  count()
+  agg({"theme_id": pd.Series.nunique})
 themes_by_year.head()
 ```
 
