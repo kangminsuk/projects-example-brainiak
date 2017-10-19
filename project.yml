@@ -2,7 +2,7 @@ title          : "Introduction to DataCamp Projects"
 description    : >
   This project is an introduction to DataCamp Projects. 
 language       : python
-from           : 'python-notebooks-prod:56'
+from           : 'python-notebooks-prod:57'
 runtime_config : default
 state          : live
 long_description: |
