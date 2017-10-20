@@ -299,10 +299,10 @@ In this task, you will:
 
 
 - Read the data in `/usr/local/share/datasets/sets.csv` as a `DataFrame` named `sets`.
-- Create a summary of the average parts per year and save it as `parts_per_year`.
+- Create a summary of the average parts per year and save it as `parts_by_year`.
 - Plot the average number of parts per year.
 
-The first few rows of `parts_per_year` should resemble the table shown below:
+The first few rows of `parts_by_year` should resemble the table shown below:
 
 
 |year|num_parts|
