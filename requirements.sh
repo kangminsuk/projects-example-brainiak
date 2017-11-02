@@ -8,7 +8,7 @@ mkdir -p $DATADIR
 wget -O $DATADIR/colors.csv https://s3.amazonaws.com/assets.datacamp.com/production/project_10/datasets/colors.csv
 wget -O $DATADIR/sets.csv https://s3.amazonaws.com/assets.datacamp.com/production/project_10/datasets/sets.csv
 
-DATADIR2=/home/repl/datasets
-mkdir -p $DATADIR2
-wget -O $DATADIR2/colors.csv https://s3.amazonaws.com/assets.datacamp.com/production/project_10/datasets/colors.csv
-wget -O $DATADIR2/sets.csv https://s3.amazonaws.com/assets.datacamp.com/production/project_10/datasets/sets.csv
+DATADIRH=/home/repl/datasets
+mkdir -p $DATADIRH
+wget -O $DATADIRH/colors.csv https://s3.amazonaws.com/assets.datacamp.com/production/project_10/datasets/colors.csv
+wget -O $DATADIRH/sets.csv https://s3.amazonaws.com/assets.datacamp.com/production/project_10/datasets/sets.csv
