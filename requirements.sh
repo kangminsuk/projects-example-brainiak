@@ -1,5 +1,5 @@
 # Python dependencies -----------------
-pip3 install sklearn
+pip3 install sklearn scipy
 
 # Data --------------------------------
 DATADIR=/home/repl/datasets
