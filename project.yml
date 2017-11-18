@@ -1,6 +1,6 @@
-title          : "Introduction to DataCamp Projects"
+title          : "Example BrainIAK project"
 description    : >
-  This project is an introduction to DataCamp Projects. 
+  This project is an introduction to BrainIAK Projects. 
 language       : python
 from           : 'python-notebooks-prod:93'
 runtime_config : default
@@ -12,13 +12,8 @@ long_description: |
   finish your project!
 technology: 2
 instructors:
-  - ramnath@datacamp.com
+  - michael@datacamp.com
 collaborators:
-  - martijn@datacamp.com
 topics:
-  - 8
-  - 4
-  - 3
 time_needed: "45 minutes"
 illustration: "https://assets.datacamp.com/production/project_10/datasets/shield_image.png"
-
