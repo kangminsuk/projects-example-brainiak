@@ -1,5 +1,10 @@
 # Python dependencies -----------------
-pip3 install sklearn scipy brainiak
+apt-get update \
+    && apt-get install -y build-essential libgomp1 libmpich-dev mpich python3-tk \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+pip3 install sklearn scipy brainiak nilearn
 
 # Data --------------------------------
 DATADIR=/home/repl/datasets
