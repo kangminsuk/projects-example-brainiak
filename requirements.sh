@@ -1,5 +1,5 @@
 # Python dependencies -----------------
-pip3 install sklearn scipy
+pip3 install sklearn scipy brainiak
 
 # Data --------------------------------
 DATADIR=/home/repl/datasets
