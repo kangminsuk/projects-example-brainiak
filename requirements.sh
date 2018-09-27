@@ -7,7 +7,7 @@ apt-get update \
 pip3 install sklearn scipy brainiak nilearn
 
 # Data --------------------------------
-DATADIR=/home/repl/datasets
+DATADIR=/home/repl/datasets/vdc
 DATA_URL=https://s3.amazonaws.com/assets.datacamp.com/projects/machow-pni-demo/BE_roi_data.mat
 
 mkdir -p $DATADIR
