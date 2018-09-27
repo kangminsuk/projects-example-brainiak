@@ -4,6 +4,9 @@ import nibabel as nib
 from nilearn.input_data import NiftiMasker
 from nilearn.masking import compute_epi_mask
 from sklearn import preprocessing
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import PredefinedSplit
+from copy import deepcopy
 
 # data path VDC dataset (instructor should set this properly)
 # princeton adroit
@@ -283,7 +286,7 @@ def reshape_data(label_TR_shifted, masked_data_all):
     return indexed_data, nonzero_labels
 
 # Take in a brain volume and label vector that is the length of the event number and convert it into a list the length of the block number
-def blockwise_sampling(eventwise_data, eventwise_labels, events_per_block=10):
+def blockwise_sampling(eventwise_data, eventwise_labels, eventwise_run_ids, events_per_block=10):
     
     # How many events are expected
     expected_blocks = int(eventwise_data.shape[0] / events_per_block)
@@ -291,6 +294,7 @@ def blockwise_sampling(eventwise_data, eventwise_labels, events_per_block=10):
     # Average the BOLD data for each block of trials into blockwise_data
     blockwise_data = np.zeros((expected_blocks, eventwise_data.shape[1]))
     blockwise_labels = np.zeros(expected_blocks)
+    blockwise_run_ids = np.zeros(expected_blocks)
     
     for i in range(0, expected_blocks):
         start_row = i * events_per_block 
@@ -298,9 +302,61 @@ def blockwise_sampling(eventwise_data, eventwise_labels, events_per_block=10):
         
         blockwise_data[i,:] = np.mean(eventwise_data[start_row:end_row,:], axis = 0)
         blockwise_labels[i] = np.mean(eventwise_labels[start_row:end_row])
-            
+        blockwise_run_ids[i] = np.mean(eventwise_run_ids[start_row:end_row])
+        
     # Report the new variable sizes
     print('Expected blocks: %d; Resampled blocks: %d' % (expected_blocks, blockwise_data.shape[0]))
 
     # Return the variables downsampled_data and downsampled_labels
-    return blockwise_data, blockwise_labels
+    return blockwise_data, blockwise_labels, blockwise_run_ids
+
+
+
+
+def normalize(bold_data_, run_ids):
+    """normalized the data within each run
+    
+    Parameters
+    --------------
+    bold_data_: np.array, n_stimuli x n_voxels
+    run_ids: np.array or a list
+    
+    Return
+    --------------
+    normalized_data
+    """
+    scaler = StandardScaler()
+    data = []
+    for r in range(vdc_n_runs):
+        data.append(scaler.fit_transform(bold_data_[run_ids == r, :]))
+    normalized_data = np.vstack(data)
+    return normalized_data
+    
+    
+def decode(X, y, cv_ids, model): 
+    """
+    Parameters
+    --------------
+    X: np.array, n_stimuli x n_voxels
+    y: np.array, n_stimuli, 
+    cv_ids: np.array - n_stimuli, 
+    
+    Return
+    --------------
+    models, scores
+    """
+    scores = []
+    models = []
+    ps = PredefinedSplit(cv_ids)
+    for train_index, test_index in ps.split():
+        # split the data 
+        X_train, X_test = X[train_index], X[test_index]
+        y_train, y_test = y[train_index], y[test_index]
+        # fit the model on the training set 
+        model.fit(X_train, y_train)
+        # calculate the accuracy for the hold out run
+        score = model.score(X_test, y_test)
+        # save stuff 
+        models.append(deepcopy(model))
+        scores.append(score)
+    return models, scores

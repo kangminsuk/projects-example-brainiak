@@ -1,6 +1,6 @@
-title          : "Example BrainIAK project"
+title          : "BrainIAK: Running Searchlight"
 description    : >
-  This project is an introduction to BrainIAK Projects. 
+  This project is an introduction to running searchlights on BrainIAK. 
 language       : python
 from           : 'python-notebooks-prod:93'
 runtime_config : default
@@ -16,5 +16,5 @@ instructors:
 collaborators:
 topics:
   - 8
-time_needed: "45 minutes"
+time_needed: "90 minutes"
 illustration: "https://assets.datacamp.com/production/project_10/datasets/shield_image.png"
